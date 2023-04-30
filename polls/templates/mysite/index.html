@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+</head>
+<body>
+    <a type="button" class="btn btn-primary" href="{% url 'polls:index'%}">Trip</a>
+    <a type="button" class="btn btn-primary" href="{% url 'Todo:index'%}">Todo</a>
+</body>
+</html>
